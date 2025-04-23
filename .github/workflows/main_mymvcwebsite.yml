@@ -55,4 +55,4 @@ jobs:
           app-name: 'myMvcWebsite'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E37F987BEB0047C7AF1F0FDDCDA75BF8 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A82281CACC174279AA6505828E16BFBA }}
