@@ -1,0 +1,39 @@
+﻿@model List<Atelier>
+<h1> There are Atelier</h1>
+@{
+    ViewData["Title"] = "Atelier";
+    
+}
+<div>
+    <form asp-action="Index" asp-controller="Atelier" method=Get>
+        <input type="text" id="search" name="search"  placeholder="search here....."/>
+        <input type="submit" value="Search">
+   </form>
+</div>
+
+<table class="table table-hover table-bordered">
+
+    <tr>
+        <th>
+            Atelier_Name
+        </th>
+
+        <th>
+            Atelier_Location
+        </th>
+
+        
+    </tr>
+    @foreach (Atelier item in Model)
+    {
+        <tr>
+            <td>
+                @item.Name
+            </td>
+            <td>
+                @item.Location
+            </td>
+
+        </tr>
+    }
+</table>
